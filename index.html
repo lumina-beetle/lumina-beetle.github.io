@@ -20,6 +20,15 @@
         code {background: white;}
         a {border-bottom: 1px solid #444444; color: #444444; text-decoration: none;}
         a:hover {border-bottom: 0;}
+
+        html {scroll-behavior: smooth;}
+        .site-nav
+        {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem 1.25rem;
+            margin: 1rem 0 2rem;
+        }
     </style>
 </head>
 <body>
@@ -27,9 +36,18 @@
     <h1>Sergio Leonel Mijares Carrasco</h1>
     <aside><i>Aspiring software developer studying at the University of Washington, Tacoma.</i></aside>
 </header>
-<br>
 
-<h2>About Me</h2>
+<nav class="site-nav">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="resume.pdf">Resume</a>
+</nav>
+
+
+<h2 id="about">About Me</h2>
 <p>
     Hello! I am a student currently making progress towards a Bachelor of Arts in Computer Science and Systems at the
     University of Washington's Tacoma campus looking to get into the field of software design and programming. Whether it
@@ -44,17 +62,17 @@
     design choices that keep a game running under the hood. It is fascinating, and I want to keep diving into
     everything that goes into these technologies through my career.
 </p>
-<h2>Projects</h2>
+<h2 id="projects">Projects</h2>
 <h3>Open-Source Multiplayer Game Contribution and Downstream Maintenance</h3>
 <p>I actively contribute to and maintain a downstream fork of a large, open-source multiplayer game, as well as
-contribute to the upstream to support its broader ecosystem.</p>
+    contribute to the upstream to support its broader ecosystem.</p>
 <ul>
     <li>Consistently managed and addressed merge-conflicts to keep a downstream up-to-date with upstream features and
         design while simultaneously ensuring the downstream design goals were unaffected</li>
     <li>Regularly assisted with troubleshooting for both users and other maintainers alike when it comes to developing
         for the codebase and finding issues with individual user clients</li>
     <li>In collaboration with other contributors and maintainers, implemented features to follow core design goals
-    for the project</li>
+        for the project</li>
 </ul>
 <p><strong>Technologies used:</strong> C#, .NET, EF Core, Git, JetBrains Rider</p>
 <h4>Challenges and Key Learnings</h4>
@@ -66,7 +84,7 @@ contribute to the upstream to support its broader ecosystem.</p>
 </p>
 
 <p>Under construction! Check back later.</p>
-<h2>Technical Skills</h2>
+<h2 id="skills">Technical Skills</h2>
 <ul>
     <li>C#</li>
     <li>Java</li>
@@ -87,7 +105,7 @@ contribute to the upstream to support its broader ecosystem.</p>
     <li>TCSS 305: Programming Practicum</li>
 </ul>
 
-<h2>Experience</h2>
+<h2 id="experience">Experience</h2>
 <h4>Community Administrator and Policy Contributor, Open-Source Project</h4>
 <ul>
     <li>Helped to set and uphold community standards on behalf of project leads</li>
@@ -97,10 +115,9 @@ contribute to the upstream to support its broader ecosystem.</p>
 
 
 For additional details, you can find my resume <a href="resume.pdf">here.</a>
-<h3>Contact me</h3>
+<h3 id="contact">Contact me</h3>
 <pre>
     <b>Email:</b> sergiomijares.c@gmail.com
-
     <a href="https://github.com/lumina-beetle/">GitHub</a>
     <a href="https://www.linkedin.com/in/mijaresc/">LinkedIn</a>
 </pre>
