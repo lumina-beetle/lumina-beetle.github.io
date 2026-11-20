@@ -1,2 +1,2 @@
 # lumina-beetle.github.io
-Github page
+My Github page
